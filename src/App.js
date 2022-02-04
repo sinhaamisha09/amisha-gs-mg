@@ -3,7 +3,6 @@ import React, {
         useEffect, 
         // useRef 
       } from 'react';
-// import { toJpeg } from 'html-to-image';
 import './App.css'
 
 import Meme from './components/Meme';
@@ -36,24 +35,7 @@ function App() {
 
   //function to generate meme
   const generateMeme = async () => {
-    // const params = {
-    //   template_id: selectedImage.id,
-    //   text0: meme.textAtTop,
-    //   text1: meme.textAtBottom,
-    //   username: "xzk03017",
-    //   password: "xzk03017@cndps.com"
-    // }
-
-    // const res = await fetch(
-    //   `https://api.imgflip.com/caption_image${objectToQueryParam(
-    //     params
-    //   )}`
-    // );
-    // const response = await res.json();
-    console.log(selectedImage.url, "response")
-    
     setMemeImage(selectedImage.url)
-    console.log(meme, "attributes")
   
   }
 
@@ -96,15 +78,6 @@ function App() {
   //     });
   // }
 
-  // if(memeImage) {
-  //   return (
-  //     <div className='meme'>
-  //       <img src={memeImage} alt="Generated meme" />
-  //       <h2 className="top">{meme.textAtTop}</h2>
-  //       <h2 className="bottom">{meme.textAtBottom}</h2>
-  //     </div>
-  //   );
-  // }
 
   return (
     <div className="App" >
